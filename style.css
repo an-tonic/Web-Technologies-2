@@ -1,0 +1,325 @@
+
+* {
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+}
+
+.to-top {
+    background: #577A9B;
+    position: fixed;
+    bottom: 16px;
+    right:32px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: center;
+    font-size:32px;
+    color:#006250;
+    text-decoration: none;
+    z-index: 4;
+}
+
+
+/*Group header and footer style*/
+nav, footer {
+    background-color: #34516C;
+    position: sticky;
+    height: 9vw;
+    top: 0;
+    /*Nav and footer should always be on top of everything because they are sticky*/
+    z-index: 3;
+}
+
+#logo {
+    height: 95%;
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
+#title {
+    font-weight: 1000;
+    font-size: 3.5vw;
+    color: #BE1622;
+    position: absolute;
+    top: 2vw;
+    left: 30%;
+}
+/*Group breadcrumbs style*/
+a {
+    text-decoration: none;
+    color: #007FB0;
+}
+
+a:hover {
+    color: #BE1622;
+}
+
+#breadcrumbs{
+    position: absolute;
+    right: 10px;
+    bottom: 0;
+    font-size: 1.5vw;
+}
+
+#breadcrumbs a {
+    margin-left: 10px;
+  
+}
+/*Hide for the hamburger menu*/
+#checkbox {
+    visibility: hidden;
+}
+
+/*Main body group*/
+main{
+    width: 900px;
+    margin: auto;
+    position: relative;
+}
+
+main h1 {
+    color: #F47721;
+}
+
+main h2{
+    color: #F2BE1A;
+}
+
+
+iframe {
+    width: 900px;
+    height: 750px;
+}
+
+/*Footer group*/
+footer div {
+    width: max-content;
+    position: absolute;
+    color: #C7CBDA;
+}
+
+footer{
+    height: 12vw;
+}
+
+#contact {
+    left: 10px;
+}
+#location {
+    right: 10px;
+}
+
+
+/*Items group style for products page*/
+
+#hoodie , #jumper ,#tshirt{
+    /*display: none;*/
+}
+#products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.item{
+    border: 2px solid grey;
+    border-radius: 5px;
+    margin: 5px;
+    position: relative;
+}
+.item_img{
+    height: 280px;
+    width: 100%;
+}
+.item_details{
+    background-color: #C7CBDA;
+    width: 250px;
+    height: 250px;
+    padding: 15px;
+    position: relative;
+
+}
+.item_name{
+    font-size: 2rem;
+    margin: -10px 0 0;
+}
+.item_price{
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: 600;
+    font-size: 150%;
+}
+.item_buy_button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/*Group for a single item on item.html*/
+.single_item .item{
+    width: 100%;
+    height: 1100px;
+    position: relative;
+}
+.single_item .item_img{
+    width: 100%;
+    height: auto;
+}
+.single_item .item_details{
+    width: auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10%;
+}
+.cart_items .item_img{
+    height: 100%;
+    width: 100px;
+}
+
+/*Cart table css*/
+table {
+    border-spacing:0 15px;
+    width: 700px;
+}
+tbody tr{
+    padding-bottom: 5px;
+}
+
+tr td:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+}
+
+tr td:nth-last-child(2) {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+td{
+    background-color: #C7CBDA;
+}
+
+.items_quantity_button{
+    background-color: white;
+    text-align: center;
+    height: 110px;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.items_quantity_button button{
+    border: inherit;
+    border-radius: 5px;
+    margin: 2px;
+    margin-left: 3px;
+    height: 100%;
+}
+
+.items_quantity_button button:hover{
+    transform: scale(1.1);
+}
+
+#purchase_button{
+    font-size:2.5vw;
+    font-weight: bold;
+    
+}
+
+table img {
+    margin-top: 4px;
+}
+
+/*Empty cart img*/
+#empty_cart{
+    width: max-content;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+#empty_cart:hover{
+    transform: scale(1.1);
+}
+
+#empty_cart img{
+    width: 8vw;
+    height: auto;
+}
+
+@media (max-width: 915px) {
+    /*Make space for hamburger menu*/
+    main{
+        width: 95vw;
+        margin: 40px auto auto;
+    }
+    /*Enlarge for readability*/
+    main h1 {
+        font-size: 4.5vw;
+    }
+    iframe {
+        width: 94vw;
+        height: 82vw;
+    }
+
+    #location, #contact {
+        font-size: 2vw;
+    }
+    /*Create hamburger with a gradient*/
+    #breadcrumbs {
+        width: 5vw;
+        height: 5vw;
+        display: block;
+        border: none;
+        bottom: 20%;
+        background: linear-gradient(
+                #BE1622, #BE1622 20%,
+                #34516C 20%, #34516C 40%,
+                #BE1622 40%, #BE1622 60%,
+                #34516C 60%, #34516C 80%,
+                #BE1622 80%, #BE1622 100%
+        );
+    }
+    /*The menu is out of the view until it is clicked*/
+    #slider_menu{
+        visibility: hidden;
+        position: fixed;
+        left: -1000px;
+        padding: 7px;
+        border-radius: 5px;
+        width: max-content;
+        font-size: 3vw;
+    }
+
+    /*When clicked transitions the menu into the view to the left part of the viewport*/
+    #checkbox:checked + #breadcrumbs span {
+        visibility: visible;
+        transition: 0.3s;
+        top: 9vw;
+        left: 0;
+        background-color: #34516C;
+        margin: 2px;
+    }
+    /*Resize an enlarged item and its text*/
+    .single_item .item{
+        height: 110vw;
+        font-size: 2vw;
+    }
+    /*The name should be bigger*/
+    .single_item .item_name{
+        font-size: 1.5em;
+    }
+}
