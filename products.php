@@ -58,7 +58,7 @@
 		
 		
 		
-		echo '<div class=\'item\' alt=\'\'><a href=\'item.html\' onclick=\'loadItem()\'>' .
+		echo '<div class=\'item\' alt=\'something\'><a href=\'item.html\' onclick=\'loadItem()\'>' .
 			 '                    <img class=\'item_img\' src=\'coursework/assignment_1_resources/'. $row["product_image"] . '\'>' .
 			 '                 </a>' .
 			 '                 <div class=\'item_details\'>' .

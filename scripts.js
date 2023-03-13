@@ -159,7 +159,7 @@ function doChecks(){
 
 	let checkmarks = document.getElementsByClassName("item_buy_button");
 	
-	for (let check in checkmarks){
+	for (let check of checkmarks){
     
 		if (localStorage.getItem(check.attributes.id.value) === null) {
 		
@@ -170,3 +170,5 @@ function doChecks(){
 	}
 	
 }
+
+

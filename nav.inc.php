@@ -4,7 +4,12 @@
 
         <input type="checkbox" id="checkbox">
 
-        <label id="breadcrumbs" for="checkbox">
+        <span class="breadcrumbs" id="userLoginlinks">
+            <a href="login.php">login</a>
+            <a href="signup.php">signup</a>
+        </span>
+
+        <label class="breadcrumbs" for="checkbox">
             <span id="slider_menu">
                 <a href="index.php">Home</a>
                 <a href="products.php">Products</a>

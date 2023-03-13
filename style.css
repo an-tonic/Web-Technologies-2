@@ -63,14 +63,31 @@ a:hover {
     color: #BE1622;
 }
 
-#breadcrumbs{
+.breadcrumbs{
     position: absolute;
     right: 10px;
     bottom: 0;
     font-size: 1.5vw;
 }
 
-#breadcrumbs a {
+#userLoginlinks{
+    top: 0;
+}
+
+.userForm{
+    width: 50%;
+    margin: 0 auto;
+    border: solid;
+    border-radius: 5px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.userFormContent * {
+    margin: 5px;
+}
+
+.breadcrumbs a {
     margin-left: 10px;
   
 }
